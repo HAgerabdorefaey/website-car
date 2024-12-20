@@ -1,0 +1,276 @@
+/* navbar */
+.navbar {
+    background-color: rgba(104, 105, 104, 0.418) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.body {
+   background-color: rgb(11, 11, 22);
+}
+.container-fluid img{
+    width: 5rem;
+    
+}
+.container-fluid .collapse ul{
+   margin: auto;
+  
+}
+ .nav-item .nav-link.active{
+   font-weight: bold;
+   color: rgb(150, 149, 149) !important;
+}
+nav .navbar-toggler{
+  background-color: white;
+}
+.nav-link {
+    color: white; 
+    text-decoration: none; 
+    position: relative; 
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: rgb(150, 149, 149); 
+}
+.nav-link::after {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0; 
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.3s ease; 
+}
+.nav-link:hover::after {
+    width: 100%; /
+}
+.collapse .btn{
+    color: white;
+    background-color:rgb(11, 11, 22);
+}
+.collapse .btn:hover{
+    color: white;
+    background-color:rgb(112, 110, 110) ;
+}
+.collapse .form-control:focus {
+    outline: 2px solid rgb(11, 11, 22); 
+    box-shadow: 0 0 5px rgb(41, 41, 63);
+}
+/* end navbar */
+
+/* cover img */
+#cover .car {
+    margin-top: 13rem;
+}
+#cover .car h1{
+    color: white;
+    font-family: 'Tajawal', 'Oswald', sans-serif;
+}
+#cover .car p{
+    color: rgb(160, 159, 159);
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Cairo', 'Roboto', sans-serif;
+}
+#cover .car .btns{
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+.btn{
+    color: rgb(11, 11, 22);
+    background-color: white;
+    font-weight: bold;
+}
+.btn.btn:hover{
+    color: white;
+    background-color: rgb(143, 143, 145);
+}
+/*end cover*/
+
+/*car*/
+#myVideo {
+  width: 100%;  
+  height: 500px; 
+  object-fit: cover;  
+  border: none;  
+}
+/*end car*/
+
+/*img*/
+#right{
+  margin-top: 4rem;
+  text-align: center;
+}
+.pa p{
+  color: rgb(13, 13, 27);
+  font-weight: bold;
+}
+.img{
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.img img{
+  width: 2rem;
+  margin-right: 2rem;
+}
+.custom-line {
+  width: 100%; 
+  height: 0.1rem; 
+  background-color: rgb(192, 191, 191); 
+  margin-top: 5rem; 
+  margin-bottom: 2rem; 
+}
+/*end img*/
+
+.rotating-logo img {
+    animation: rotate 10s linear infinite; 
+    margin-top: 2rem;
+}
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes moveAround {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(200px, 0); 
+    }
+    50% {
+      transform: translate(200px, 200px); 
+    }
+    75% {
+      transform: translate(0, 200px); 
+    }
+    100% {
+      transform: translate(0, 0); 
+    }
+  }
+
+  /*start card*/
+ .container .ban{
+    background-color: rgb(11, 11, 22);
+    color: white;
+ }
+ .container .ban:hover{
+    background-color: rgb(112, 110, 110);
+    color: white;
+ }
+ .container h5{
+  color: rgb(13, 13, 24);
+ }
+ .container span{
+  color: rgb(127, 127, 129);
+ }
+ .container .bi-star-fill{
+  color:gold;
+ }
+ .container .bi-person-fill{
+  color:sandybrown;
+ }
+ .container .bi-snow3{
+  color: dodgerblue;
+ }
+ .container .bi-diagram-2-fill{
+  color: darkslategray;
+ }
+ .container .bi-currency-dollar{
+  color:green;
+ }
+ /*end card*/
+
+/*cover*/
+.gradient-background {
+  width: 100%;
+  height: 350px; 
+  background: linear-gradient(45deg, #1d1831, #2c3768, #a9b0d8);
+  display: flex;
+  align-items: center;
+}
+.gradient-background h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+.gradient-background h2{
+  color: white;
+  font-size: 0.8rem;
+}
+.gradient-background img{
+  margin-bottom: 3rem;
+}
+.gradient-background .btn{
+  color: white;
+  background-color: rgb(143, 143, 145);
+}
+.gradient-background .btn:hover{
+  color: rgb(11, 11, 22);
+  background-color: white;
+}
+/*end cover*/
+
+/*start icon*/
+.small-image {
+  width: 4rem; 
+  height: auto; 
+  margin: 0 1rem; 
+}
+.gradient-backgrounde {
+  width: 100%;
+  height: 200px; 
+  background: #171422;
+  display: flex;
+  align-items: center;
+}
+/*end icon
+
+/*footer*/
+.gradient-backgroundes {
+  width: 100%;
+  background: linear-gradient(45deg, #2c3768,#1d1831, #2c3768);
+  display: flex;
+  align-items: center;
+}
+.icon-shake:hover {
+  animation: shake 0.5s ease-in-out;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+/*end footer*/
+
+/*card*/
+ .hony{
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.pony{
+  font-family: 'Cairo', sans-serif;
+}
+/*end card*/
+
+/*body*/
+.bod{
+  background-color: rgb(11, 11, 22);
+}
+.btn-custom {
+  background-color: #003366;  
+  color: white;  
+  border: none;  
+}
+
+.btn-custom:hover {
+  background-color: #808080;  
+  color: white;
+}
+/*end body*/
